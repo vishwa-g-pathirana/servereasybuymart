@@ -154,9 +154,7 @@ app.patch("/productunpublish/:id", async (req, res) => {
     }
 })
 
-//update
 
-//delete
 
 app.listen(5000, () => {
     console.log("server has startes on port 5000");
