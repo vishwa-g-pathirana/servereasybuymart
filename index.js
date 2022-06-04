@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const pool = require("./db");
+let port = process.env.PORT || 5000
 
 //middleware
 app.use(cors());
@@ -158,6 +159,6 @@ app.patch("/productunpublish/:id", async (req, res) => {
 
 //delete
 
-app.listen(5000, () => {
-    console.log("server has startes on port 5000");
+app.listen(port, () => {
+    console.log(`server has startes on port ${port}`);
 })
